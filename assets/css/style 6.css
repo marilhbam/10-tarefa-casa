@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff
+}
+.container{
+    width: 80rem;
+}
+header{
+    color: #fff;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    width: 75rem;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+.logo img{
+    width: 8rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin: 10px 30px 10px 30px;
+    list-style: none;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.linha1{
+    display: flex;
+}
+.boxleft,
+.boxright{
+    width: 40rem;
+    margin-top: 2rem;
+}
+.boxleft h5{
+    font-size: calc(1.275rem + .3vw)!important;
+    color: #0dcaf0;
+}
+.boxleft h1{
+    font-size: calc(1.625rem + 3.5vw);
+}
+.boxleft h1 span,
+.row .col-left h2 span,
+.linha .box h2 span{
+    background: -webkit-linear-gradient(90deg, rgba(13,202,240,1) 0%, rgba(2,198,210,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.boxleft p,
+.row .col p,
+.linha .box p,
+.grupo .caixa p{
+    color: rgb(108, 117, 125);
+}
+.boxleft button,
+.row .col-left button,
+.linha .box .innerBox button{
+    width: 15rem;
+    height: 4rem;
+    background: linear-gradient(150deg, rgb(5, 132, 230) 10%, rgb(5, 237, 220) 100%);
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.boxright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linha2{
+    height: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    background: linear-gradient(150deg, rgb(5, 132, 230) 10%, rgb(5, 237, 220) 100%);
+}
+.linha2 .col, .col-m{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.linha2 .col img{
+    width: 3rem;
+}
+.linha2 .col-m img{
+    width: 6rem;
+}
+.row{
+    display: flex;
+    width: 80rem;
+    justify-content: flex-end;
+}
+.first{
+    margin-top: 7rem;
+}
+.row .col-left{
+    width: 40%;
+    height: 30rem;
+}
+.row .col-left h5,
+.linha .box .texto h5{
+    font-size: calc(1.275rem + .3vw)!important;
+    background: -webkit-linear-gradient(90deg, rgba(13,202,240,1) 0%, rgba(2,198,210,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.row .col-left h2,
+.linha .box .texto h2{
+    font-size: calc(1.625rem + 1.6vw);
+    margin-top: 1rem;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30rem;
+    background-color: #0c0c0c;
+    border: 1px solid #1d1d1d;
+    padding: 4rem 3rem;
+}
+.row .col h2, p{
+    margin-bottom: 2rem;
+}
+.row .col:hover{
+    background-color: #333333;
+}
+.row .col .botao{
+    display: flex;
+    justify-content: flex-end;
+}
+.row .col .botao button{
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 3rem;
+    border: none;
+}
+.row .col:hover button,
+.row .col:hover .botao button p{
+    background: linear-gradient(150deg, rgb(5, 132, 230) 10%, rgb(5, 237, 220) 100%);
+    color: #fff;
+}
+.linha{
+    display: flex;
+    width: 80rem;
+    margin-top: 7rem;
+    height: 25rem;
+}
+.linha .box{
+    width: 50%;
+    height: 25rem;
+    padding-right: 13rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.linha .imgBox{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.linha .innerBox button{
+    margin-bottom: 5rem;
+}
+.innerBox{
+    display: flex;
+    justify-content: space-between;
+}
+.linha .box .innerBox .elemento h3{
+    font-size: calc(1.275rem + .3vw)!important;
+}
+.linha .box .texto h2 span, .innerBox .elemento p{
+    background: -webkit-linear-gradient(90deg, rgba(13,202,240,1) 0%, rgba(2,198,210,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grupo{
+    display: flex;
+    width: 80rem;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.grupo .caixa .icone{
+    background-color: #fff;
+    width: 2rem;
+    height: 2rem;
+}
+.grupo .caixa{
+    width: 25%;
+    height: 18rem;
+    border: 1px solid #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4rem 2rem 2rem 2rem;
+}
+.grupo .caixa p, span{
+    color:#fff;
+    margin: none;
+}
+.grupo .caixa:hover .icone{
+    background: linear-gradient(150deg, rgb(5, 132, 230) 10%, rgb(5, 237, 220) 100%);
+}
+.grupo .caixa:hover{
+    background-color: #333333;
+}
